@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3AA4FF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <apps.com.stations.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="스케줄 수정/삭제"
+                android:textColor="#ffffff"
+
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/back"
+                android:textColor="#ffffff"></Button>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <apps.com.stations.CustomTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="시간설정"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <apps.com.stations.CustomTextView
+            android:id="@+id/station_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+
+            android:textColor="#777777"
+            android:textSize="22dp" />
+
+
+        <ImageView
+            android:id="@+id/update_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"  android:layout_marginTop="20dp" android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="74dp"
+                android:layout_height="40dp"
+                android:background="@drawable/i034"
+                android:layout_weight="0.07" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <apps.com.stations.CustomTextView
+                    android:id="@+id/date_sc"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="30dp" android:layout_gravity="center"   android:id="@+id/date_img"
+                    android:layout_height="20dp"
+                    android:background="@drawable/cs_icon_02" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" android:layout_marginTop="10dp" android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="93dp"
+                android:layout_height="40dp"
+                android:background="@drawable/i035" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <apps.com.stations.CustomTextView
+                    android:id="@+id/start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="30dp" android:layout_gravity="center"
+                    android:layout_height="20dp"  android:id="@+id/start_img"
+                    android:background="@drawable/cs_icon_02" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" android:layout_marginTop="10dp" android:paddingLeft="20dp" android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:background="@drawable/i036" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ffffff">
+
+            <apps.com.stations.CustomTextView
+                android:id="@+id/end_time"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="30dp" android:layout_gravity="center"
+                android:layout_height="20dp"  android:id="@+id/end_img"
+                android:background="@drawable/cs_icon_02" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" android:layout_marginTop="10dp" android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <apps.com.stations.CustomTextView
+
+                android:layout_width="93dp" android:text="알람" android:textColor="#ffffff"
+                android:layout_height="40dp" android:textSize="20dp" android:gravity="center"
+                android:background="#558ED5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <apps.com.stations.CustomTextView
+                    android:id="@+id/alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="30dp" android:layout_gravity="center"
+                    android:layout_height="20dp"  android:id="@+id/alarm_img"
+                    android:background="@drawable/cs_icon_02" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:gravity="center" android:layout_marginTop="10dp"
+            android:layout_height="60dp" android:orientation="horizontal">
+
+
+            <apps.com.stations.CustomTextView
+                android:id="@+id/del"
+                android:layout_width="100dp" android:text="스케줄 삭제" android:textColor="#ffffff"
+                android:layout_height="37dp" android:textSize="20dp" android:gravity="center"
+                android:background="@drawable/border8" />
+
+
+            <apps.com.stations.CustomTextView
+                android:id="@+id/add"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/border8"
+                android:gravity="center"
+                android:text="스케줄 수정"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <apps.com.stations.CustomTextView
+                android:id="@+id/info" android:layout_marginLeft="10dp"
+                android:layout_width="100dp" android:text="여행지 정보" android:textColor="#ffffff"
+                android:layout_height="37dp" android:textSize="20dp" android:gravity="center"
+                android:background="@drawable/border8" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

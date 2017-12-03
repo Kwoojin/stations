@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003366"
+
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"     android:orientation="horizontal"
+        android:background="#3AA4FF"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:gravity="center"
+            android:layout_height="match_parent">
+        <apps.com.stations.CustomTextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+           android:background="@drawable/title"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:gravity="right|center" android:paddingRight="10dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="30dp" android:background="@drawable/top_icon_menu" android:id="@+id/menu"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/i004"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="bottom|center" android:paddingBottom="30dp" android:orientation="vertical"
+        android:layout_height="wrap_content" android:layout_marginTop="20dp">
+
+
+
+        <Button
+            android:layout_width="233dp"
+            android:background="@drawable/i002"
+            android:id="@+id/btn02"
+            android:layout_marginTop="20dp"
+            android:layout_height="43dp" />
+
+
+        <Button
+            android:layout_width="233dp"
+            android:background="@drawable/ic04"
+            android:id="@+id/btn03"
+            android:layout_marginTop="20dp"
+            android:layout_height="43dp" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="233dp"
+            android:background="@drawable/i045"
+            android:id="@+id/btn01"
+            android:layout_height="44dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

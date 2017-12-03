@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3AA4FF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <apps.com.stations.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="여행중인코스"
+                android:textColor="#ffffff"
+
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:paddingLeft="10dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@drawable/back"
+                android:textColor="#ffffff"></Button>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ListView
+            android:id="@+id/s_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#eeeeee"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none"
+            android:listSelector="#FFFFFF"
+            android:scrollbars="none"
+            android:scrollingCache="false"></ListView>
+
+
+    </LinearLayout>
+</LinearLayout>
